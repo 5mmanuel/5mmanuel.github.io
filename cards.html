@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap Exercise 3</title>
+  <style>
+    /* Add the styles */
+    .navbar {
+      font-weight: bolder;
+    }
+
+    .jumbotron {
+      background: url("images/bg.jpg") no-repeat center center;
+      background-size: cover;
+      height: 900px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+
+    #carouselExampleIndicators {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 2em;
+    }
+
+    #carouselExampleIndicators img {
+      height: 650px;
+    }
+
+    .container {
+      /* font-weight: bolder; */
+      font-size: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .card-body {
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Add the navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/Digital.png" alt="" width="80px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#jumbotron">Digital Guardians</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carouselExampleIndicators">Carousel</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#cards" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Cards
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#cards">Cyber Stalking</a></li>
+              <li><a class="dropdown-item" href="#cards">Ostracism</a></li>
+              <li><a class="dropdown-item" href="#cards">Online Harassment</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <p class="display-5 fw-bold text-center">Below some infomation about cyberbullying</p>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <iframe height="315" src="https://www.youtube.com/embed/5v-Sb0-ys90"
+            title="What Is Cyberstalking and How To Prevent It" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Learn about Cyber Stalking</h5>
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              Read more
+            </button>
+            <div class="collapse" id="collapseOne">
+              <ul>
+                <li>
+                  Cyberstalking is persistent and intrusive online harassment.
+                </li>
+                <li>Involves repeated communication and monitoring of online activities.</li>
+                <li>Includes false impersonation, threats, intimidation, harassment, doxxing, and manipulation.
+                </li>
+                <li>Aims to control, cause distress, or harm victims through digital platforms.</li>
+                <li>Can have severe emotional and psychological consequences.</li>
+                <li>Legal measures vary by jurisdiction; victims are advised to report incidents and safeguard their
+                  online presence.</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <iframe height="315" src="https://www.youtube.com/embed/MpZMaL2DxF4" title="Ostracism" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">ostracism</h5>
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Read more
+            </button>
+            <div class="collapse" id="collapseTwo">
+              <p>
+              <ul>
+                <li>Sharing someone's home address online without their permission.</li>
+                <li>
+                  Posting someone's phone number online and encouraging others to call or text them.
+                </li>
+                <li>Sharing someone's social media accounts online and encouraging others to harass them.
+                </li>
+                <li>Posting someone's personal information on a website or forum.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <iframe height="315" src="https://www.youtube.com/embed/nG9Jnu9F1Pw" title="Types of Cyberbullying – Trickery"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Learn about Online Harassment</h5>
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Read more
+            </button>
+            <div class="collapse" id="collapseThree">
+              <p>
+
+              </p>
+              <ul>
+                <li>Ostracism Definition: Social exclusion or intentional isolation of an individual.</li>
+                <li>Actions Involved: Withholding social acceptance, interaction, or inclusion. </li>
+                <li>Spreading rumors about you online.
+                </li>
+                <li>Hacking into your social media accounts or email.</li>
+                <li>Making fun of you or calling you names online.
+                </li>
+                <li>Consequences: Leads to feelings of isolation, marginalization, and negative emotions.</li>
+                <li>Occurrence: Can happen in various social settings, both offline and online.</li>
+                <li>Impacts: Significantly affects mental well-being and the sense of belonging.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add the Modal -->
+      <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Surprise!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>You have successfully completed the exercise!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
