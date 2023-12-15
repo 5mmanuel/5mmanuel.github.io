@@ -86,7 +86,8 @@
     </nav>
     <div style="height: 200px;"></div>
     <form action="" method="GET">
-        Name: <input type="text" name="name" /> <br />
+        Name: <input type="text" name="name" id="name_input"/>
+        <br />
 
         <div class="questions">
             <p>
@@ -142,8 +143,6 @@
             <p>
                 3. Which term best describes the act of revealing private or sensitive information about someone without
                 their consent?
-
-
             </p>
             <input type="radio" id="a. Flaming" name="qn3" value="a" />
             <label for="a. Flaming">a. Flaming</label>
@@ -335,21 +334,48 @@
         </div>
 
 
-        <input type="button" value="Submit" onclick="mark()">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            onclick="mark()">
+            Submit
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Results</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Congrats <span id="username"></span>!! You have scored: <span id="result"></span>/8
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
             function mark() {
+                let name = document.getElementById("name_input").value
+                document.getElementById("username").innerHTML = name;
                 let questions = document.getElementsByClassName("questions");
                 let answers = ["c", "b", "b", "b", "b", "c", "c", "c"];
+                let score = 0;
                 for (let x = 0; x < questions.length; x++) {
                     console.log(questions[x].querySelector("input[type='radio']:checked").value);
                     if (questions[x].querySelector("input[type='radio']:checked").value.substr(0, 1) == answers[x]) {
-
-                        console.log("correct")
+                        score = score + 1
                     }
-                    // if(questions[x].children)
                 }
+                document.getElementById("result").innerHTML = score;
             }
         </script>
+
+
 
 
 
